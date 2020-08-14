@@ -119,6 +119,12 @@
     .navegacion a {
         font-family: 'Bebas Neue', cursive;
     }
+    .redes-sociales a{
+        font-family: 'Bebas Neue', cursive;
+    }
+    #contac{
+        font-family: 'Lemonada', cursive;
+    }
     
     h1 {
         font-family: 'Alegreya Sans SC', sans-serif;
@@ -143,7 +149,11 @@
     .par h2 {
         margin: 0 auto;
     }
-    
+    h2{
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 20px;
+        font-weight: 700
+    }
     @media (max-width: 576px) {
         .header {
             width: 100%;
@@ -412,4 +422,23 @@
         to {
             opacity: 1
         }
+    }
+
+    .whatsapp{
+        display:scroll;
+        position:fixed;
+        bottom:320px;
+        right:0px;
+        width: 60px;
+    }
+  
+    #wp{
+        
+        color: green;
+        font-size: 50px;
+    }
+    #wp:hover{
+        transform: scale(1.3);
+        transition: 0.8s;
+
     }
