@@ -84,7 +84,6 @@ $(document).ready(function hola() {
 });
 
 
-// Slider automatico 
 
 
 

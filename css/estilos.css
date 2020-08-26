@@ -164,6 +164,7 @@
             display: block;
             flex-direction: column-reverse;
         }
+
         .navegacion {
             display: flex;
             flex-direction: column;
@@ -370,22 +371,20 @@
             padding-top: 10px;
             max-height: 60vh;
         }
-        .slider1 {
-        
-         
-        
-        }
+      
       
         .slider2 {
             display: block;
           
         }
-       
+   
+
         .slideshow-container {
             display: block;
             
        
         }
+    
         .fade img {
             display: block;
         }
