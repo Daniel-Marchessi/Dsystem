@@ -281,7 +281,7 @@
     .texto h1 {
         font-size: 50px;
         color: rgb(179, 111, 35);
-        -webkit-text-stroke: 2px rgb(187, 175, 175);
+        -webkit-text-stroke: 0.5px rgb(187, 175, 175);
     }
     
     .padre {
@@ -369,19 +369,13 @@
             max-width: 1000px;
             margin: 0 auto;
             padding-top: 10px;
-            max-height: 60vh;
+            
         }
       
-      
-        .slider2 {
-            display: block;
-          
-        }
    
 
         .slideshow-container {
             display: block;
-            
        
         }
     
@@ -389,6 +383,11 @@
             display: block;
         }
     }
+
+    .padre svg{
+        font-size: 20px;
+    }
+
     /* sliderr */
     
     .slideshow-container {
@@ -413,13 +412,7 @@
         display: none;
     }
     
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
+   
     
     .fade {
         -webkit-animation-name: fade;

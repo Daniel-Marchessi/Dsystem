@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Kalam:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3144e78b6c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ranchers&display=swap" rel="stylesheet">
@@ -38,59 +35,79 @@
     <div class="padre">
 
         <div class="slider1 ">
-            <!-- https://frosty-shirley-db1424.netlify.app/ -->
             <a title="Click para Visitar" 
             href="https://frosty-shirley-db1424.netlify.app/" 
             target="blank"><img src="img/Frontend_Store1.png" alt="" id="imagen2"></a>
-            <button onclick="next1()">Next</button>
-            <button onclick="previous1()">previous</button>
+            <svg onclick="previous1()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+            </svg>
+            <svg onclick="next1()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
         
         </div>
 
         <div class="slider2">
-            <!--https://sleepy-davinci-54ae54.netlify.app/" -->
             <a title="Click para Visitar" href="https://sleepy-davinci-54ae54.netlify.app/" target="blank">
-           <img src="img/Freelancer1.png" alt=""  id="imagen"></a>
-            <button class="fad" onclick="next()">Next</button>
-            <button class="fad" onclick="previous()">previous</button>
-
+            <img src="img/Freelancer1.png" alt=""  id="imagen"></a>
+            <svg onclick="previous()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+            </svg>
+            <svg onclick="next()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
         </div>
     </div>
   
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
+           
             <a title="Click para Visitar" href="https://laughing-bohr-86959b.netlify.app/" target="_blank">
-            <img src="img/cafe1.jpg" style="width:100%"></a>
+            <img onclick="next4()" src="img/cafe1.jpg" style="width:100%"></a>
 
         </div>
 
         <div class="mySlides ">
-            <div class="numbertext">2 / 4</div>
+           
             <a title="Click para Visitar" href="https://laughing-bohr-86959b.netlify.app/" target="_blank">
             <img src="img/cafe2.jpg" style="width:100%"></a>
 
         </div>
 
         <div class="mySlides ">
-            <div class="numbertext">3 / 4</div>
+            
             <a title="Click para Visitar" href="https://laughing-bohr-86959b.netlify.app/" target="_blank">
             <img src="img/cafe3.jpg" style="width:100%"></a>
 
         </div>
 
         <div class="mySlides ">
-            <div class="numbertext">4 / 4</div>
+            
             <a title="Click para Visitar" href="https://laughing-bohr-86959b.netlify.app/" target="_blank">
             <img src="img/cafe4.jpg" style="width:100%"></a>
 
         </div>
     </div>
 
+    <div class="padre">
+
+        <div class="slider1">
+            <a title="Click para Visitar" 
+            href="https://hardcore-joliot-796a09.netlify.app/" 
+            target="blank"><img src="img/bienesraices-1.png" alt="" id="imagen3"></a>
+            <svg onclick="previous3()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+            </svg>
+            <svg onclick="next3()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+            </svg>
+        
+        </div>
+
+    </div>
 
     <a class="whatsapp" href="https://api.whatsapp.com/send?phone=5493455478753" target="blank"><i class="fab fa-whatsapp"id="wp"></i></a>
 
-    <!-- link bienes raices https://hardcore-joliot-796a09.netlify.app/ -->
   
     <script src="js/script2.js"></script>
 
