@@ -1,459 +1,443 @@
-    html {
-        box-sizing: border-box;
-        margin: 0;
-    }
-    
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-    
-    header {
-        background-color: black;
-    }
-    
-    body {
-        background-color: white;
-        margin: 0;
-    }
-    
-    .header {
-        /* background-image: url(../img/header-Wed-DSystem-2.jpg); */
-       height: 100vh;
-       width: 100%;
-        background-position: top center;
-        background-size: cover;
-    }
-    
-    .newcastler {
-        position: relative;
-        height: auto;
-        height: 90vh;
-    }
-    
-    .newcastler::before {
-        background-image: url(../img/origen-nombres-informatica-nunca-hubieras-imaginado_2-1536x1003.jpg);
-        content: '';
-    }
-    
-    .parallax:before {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-    }
-    
-    .newcastler .contenido {
-        padding: 10px 0;
-        color: white;
-        text-align: center;
-        position: relative;
-    }
-    
-    .newcastler {
-        padding: 10px 0;
-        color: white;
-        text-align: center;
-        position: relative;
-    }
-    
-    .barra {
-        background-color: black;
-        padding: 20px 0;
-        z-index: 2;
-    }
-    
-    .fixed {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-    }
-    
-    .logo {
-        max-width: 100px;
-        max-height: 100px;
-        margin-left: 2rem;
-    }
-    
-    .navegacion {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .navegacion a {
-        text-decoration: none;
-        color: white;
-        padding-right: 40px;
-        font-size: 1.5rem;
-    }
-    
-    .navegacion a:hover {
-        color: orangered;
-        transition: 1s;
-        transform: translate(10px);
-    }
-    
-    .grow:hover {
-        --webkit-transform: rotateZ (-30deg);
-        -ms-transform: rotateZ (-30deg);
-        transform: rotateZ (-30deg);
-    }
-    
-    .menu {
-        display: flex;
-        min-height: 104px;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-       position: relative;
-        
-    }
-    
-    .navegacion a {
-        font-family: 'Bebas Neue', cursive;
-    }
-    .redes-sociales a{
-        font-family: 'Bebas Neue', cursive;
-    }
-    #contac{
-        font-family: 'Lemonada', cursive;
-    }
-    
-    h1 {
-        font-family: 'Alegreya Sans SC', sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    .logotipo:hover {
-        transform: scale(1.3);
-        transition: 0.8s;
-    }
-    
-    .par {
-        min-height: 200px;
-        display: flex;
-        align-items: center;
-        padding-top: 1rem;
-    }
-    
-    .par h2 {
-        margin: 0 auto;
-    }
-    h2{
-        font-family: 'Alegreya Sans SC', sans-serif;
-        font-size: 20px;
-        font-weight: 700
-    }
-    @media (max-width: 576px) {
-        .header {
-            width: 100%;
-            height: 50vh;
-        }
-        .menu {
-            display: block;
-            flex-direction: column-reverse;
-        }
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
 
-        .navegacion {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .navegacion a:hover {
-            color: orangered;
-            transition: 1s;
-        }
-        .navegacion a {
-            text-align: center;
-            padding: 2px;
-            margin-top: 3px;
-        }
-        div .logotipo {
-            display: none;
-        }
-        .logotipo {
-            text-align: center;
-            align-items: center;
-        }
-        .logo {
-            padding: 0;
-            margin: 0;
-        }
-        .par h2 {
-            text-align: center;
-            padding: 0 10px;
-        }
-    }
-    
-    img {
-        width: 100%;
-    }
-    
-    .footer {
-       
-        background-color: black;
-        background-position: top center;
-        background-size: cover;
-    }
-    
-    .redes-sociales a {
-        padding-top: 1rem;
-        color: white;
-        margin-left: 1rem;
-        text-decoration: none;
-    }
-    
-    .contacto {
-        color: white;
-        margin-left: 2.8rem;
-        padding-top: 1rem;
-    }
-    
-    .bor {
-        border-bottom: 1px solid red;
-        width: 110px;
-        text-align: center;
-    }
-    
-    .redes-sociales i {
-        color: red;
-        font-size: 20px;
-        padding: 8px;
-    }
-    
-    .redes-sociales a {
-        margin: 0;
-        font-size: 20px;
-        padding-left: 10px;
-        max-width: 300px;
-    }
-    
-    .redes-sociales a:hover {
-        color: orangered;
-        transition: 1s;
-    }
-    
-    .redes-sociales {
-        display: flex;
-        flex-direction: column;
-        margin: 0 10px 0 10px;
-        padding: 20px;
-    }
-    
-    .copy {
-        color: white;
-        background-color: black;
-        margin: 0;
-        padding-bottom: 3px;
-        text-align: center;
-    }
-    /* CSS DEL PORTFOLIO */
-    
-    .contenedor {
-        max-width: 1000px;
-        background-color: orangered;
-        margin: 0 auto;
-        background-image: url(../img/wallhaven-76xlmv.jpg);
-        height: 100vh;
-        width: 100%;
-        background-position: top center;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .texto {
-        min-height: 50vh;
-    }
-    
-    .texto h1 {
-        font-size: 50px;
-        color: rgb(179, 111, 35);
-        -webkit-text-stroke: 0.5px rgb(187, 175, 175);
-    }
-    
-    .padre {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding-top: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      
-        column-gap: 25px;
-       
-    }
-    
-    .slider1{
-        display: block;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
-    }
-    .slider2{
-        display: block;
-     
-        
-    }
-    
-    .web {
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-top: 1rem;
-        height: 55vh;
-    }
-    
-    .web img {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .titulo {
-        max-width: 1000px;
-        margin: 0 auto;
-        text-align: center;
-        min-height: 50px;
-        padding-top: 10px;
-    }
-    
-    .titulo h2 {
-        background-color: rgb(187, 175, 175);
-    }
-    
-    .active {
-        opacity: 1;
-    }
-    
-    .otracosa {
-        position: relative;
-    }
-    
-    .ir {
-        text-decoration: none;
-    }
-    
-    .ire {
-        background-color: lightseagreen;
-        border-radius: 10px;
-        margin: 0;
-        padding: 0;
-        width: 50px;
-        height: 30px;
-        font-size: 18px;
-        padding: 2px 0 0 17px;
-        font-family: 'Ranchers', cursive;
-    }
-    
-    .boton-imagen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        overflow: hidden;
-    }
-    
-    @media (max-width: 576px) {
-        .padre {
-            display: block;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding-top: 10px;
-            
-        }
-      
-   
+header {
+	background-color: black;
+}
 
-        .slideshow-container {
-            display: block;
-       
-        }
-    
-        .fade img {
-            display: block;
-        }
-    }
+body {
+	background-color: white;
+	margin: 0;
+}
 
-    .padre svg{
-        font-size: 20px;
-    }
+.header {
+	/* background-image: url(../img/header-Wed-DSystem-2.jpg); */
+	height: 100vh;
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+}
 
-    /* sliderr */
-    
-    .slideshow-container {
-        max-width: 1000px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-      
-    }
-  
-    .slideshow-container2{
-      
-        height: 550px;
-        margin: 0 auto;
-    }
-   
-    .slideshow-container2 img{
-        max-height: 550px;
-    }
+.newcastler {
+	position: relative;
+	height: auto;
+	height: 90vh;
+}
 
-    .mySlides {
-        display: none;
-    }
-    
-   
-    
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-    
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
+.newcastler::before {
+	background-image: url(../img/origen-nombres-informatica-nunca-hubieras-imaginado_2-1536x1003.jpg);
+	content: '';
+}
 
-    .whatsapp{
-        display:scroll;
-        position:fixed;
-        bottom:320px;
-        right:0px;
-        width: 60px;
-    }
-  
-    #wp{
-        
-        color: green;
-        font-size: 50px;
-    }
-    #wp:hover{
-        transform: scale(1.3);
-        transition: 0.8s;
+.parallax:before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
 
-    }
+.newcastler .contenido {
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.newcastler {
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.barra {
+	background-color: black;
+	padding: 20px 0;
+	z-index: 2;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.logo {
+	max-width: 100px;
+	max-height: 100px;
+	margin-left: 2rem;
+}
+
+.navegacion {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navegacion a {
+	text-decoration: none;
+	color: white;
+	padding-right: 40px;
+	font-size: 1.5rem;
+}
+
+.navegacion a:hover {
+	color: orangered;
+	transition: 1s;
+	transform: translate(10px);
+}
+
+.grow:hover {
+	--webkit-transform: rotateZ (-30deg);
+	-ms-transform: rotateZ (-30deg);
+	transform: rotateZ (-30deg);
+}
+
+.menu {
+	display: flex;
+	min-height: 104px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	position: relative;
+}
+
+.navegacion a {
+	font-family: 'Bebas Neue', cursive;
+}
+.redes-sociales a {
+	font-family: 'Bebas Neue', cursive;
+}
+#contac {
+	font-family: 'Lemonada', cursive;
+}
+
+h1 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.logotipo:hover {
+	transform: scale(1.3);
+	transition: 0.8s;
+}
+
+.par {
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	padding-top: 1rem;
+}
+
+.par h2 {
+	margin: 0 auto;
+}
+h2 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+@media (max-width: 576px) {
+	.header {
+		width: 100%;
+		height: 50vh;
+	}
+	.menu {
+		display: block;
+		flex-direction: column-reverse;
+	}
+
+	.navegacion {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.navegacion a:hover {
+		color: orangered;
+		transition: 1s;
+	}
+	.navegacion a {
+		text-align: center;
+		padding: 2px;
+		margin-top: 3px;
+	}
+	div .logotipo {
+		display: none;
+	}
+	.logotipo {
+		text-align: center;
+		align-items: center;
+	}
+	.logo {
+		padding: 0;
+		margin: 0;
+	}
+	.par h2 {
+		text-align: center;
+		padding: 0 10px;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+.footer {
+	background-color: black;
+	background-position: top center;
+	background-size: cover;
+}
+
+.redes-sociales a {
+	padding-top: 1rem;
+	color: white;
+	margin-left: 1rem;
+	text-decoration: none;
+}
+
+.contacto {
+	color: white;
+	margin-left: 2.8rem;
+	padding-top: 1rem;
+}
+
+.bor {
+	border-bottom: 1px solid red;
+	width: 110px;
+	text-align: center;
+}
+
+.redes-sociales i {
+	color: red;
+	font-size: 20px;
+	padding: 8px;
+}
+
+.redes-sociales a {
+	margin: 0;
+	font-size: 20px;
+	padding-left: 10px;
+	max-width: 300px;
+}
+
+.redes-sociales a:hover {
+	color: orangered;
+	transition: 1s;
+}
+
+.redes-sociales {
+	display: flex;
+	flex-direction: column;
+	margin: 0 10px 0 10px;
+	padding: 20px;
+}
+
+.copy {
+	color: white;
+	background-color: black;
+	margin: 0;
+	padding-bottom: 3px;
+	text-align: center;
+}
+/* CSS DEL PORTFOLIO */
+
+.contenedor {
+	max-width: 1000px;
+	background-color: orangered;
+	margin: 0 auto;
+	background-image: url(../img/wallhaven-76xlmv.jpg);
+	height: 100vh;
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.texto {
+	min-height: 50vh;
+}
+
+.texto h1 {
+	font-size: 50px;
+	color: rgb(179, 111, 35);
+	-webkit-text-stroke: 0.5px rgb(187, 175, 175);
+}
+
+.padre {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	column-gap: 25px;
+}
+
+.slider1 {
+	display: block;
+}
+.slider2 {
+	display: block;
+}
+
+.web {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 1rem;
+	height: 55vh;
+}
+
+.web img {
+	width: 100%;
+	height: 100%;
+}
+
+.titulo {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 50px;
+	padding-top: 10px;
+}
+
+.titulo h2 {
+	background-color: rgb(187, 175, 175);
+}
+
+.active {
+	opacity: 1;
+}
+
+.otracosa {
+	position: relative;
+}
+
+.ir {
+	text-decoration: none;
+}
+
+.ire {
+	background-color: lightseagreen;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 30px;
+	font-size: 18px;
+	padding: 2px 0 0 17px;
+	font-family: 'Ranchers', cursive;
+}
+
+.boton-imagen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+@media (max-width: 576px) {
+	.padre {
+		display: block;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+
+	.slideshow-container {
+		display: block;
+	}
+
+	.fade img {
+		display: block;
+	}
+}
+
+.padre svg {
+	font-size: 20px;
+}
+
+/* sliderr */
+
+.slideshow-container {
+	max-width: 1000px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.slideshow-container2 {
+	height: 550px;
+	margin: 0 auto;
+}
+
+.slideshow-container2 img {
+	max-height: 550px;
+}
+
+.mySlides {
+	display: none;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.whatsapp {
+	display: scroll;
+	position: fixed;
+	bottom: 320px;
+	right: 0px;
+	width: 60px;
+}
+
+#wp {
+	color: green;
+	font-size: 50px;
+}
+#wp:hover {
+	transform: scale(1.3);
+	transition: 0.8s;
+}
